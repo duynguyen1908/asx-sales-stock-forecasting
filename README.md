@@ -10,6 +10,13 @@
 - Forecast sales for three ASX companies and checked each forecast against a held-out year
 - Built a Tableau dashboard of share prices across Australia
 
+**Methods**
+- **Data wrangling:** de-duplication with an anomaly log, per-share variables, winsorising, and a 12-month-ahead target with no look-ahead
+- **Regression:** 4 nested models (OLS → fundamentals → industry/year effects → firm fixed effects), compared with adj. R², AIC and BIC
+- **Diagnostics:** Breusch-Pagan → HC1 robust standard errors; VIF; residual plots; a sensitivity check on the sales transform
+- **Forecasting:** ADF stationarity tests and ARIMA order selection, with the **final year held out from every modelling decision**; compared against a naive benchmark
+- **Simulation:** 10,000-scenario Monte Carlo on log sales growth, with Shapiro-Wilk tests of the normality assumption
+
 **Result:** Sales look like a strong signal on their own, but the effect **disappears** once company fundamentals are considered. Sales-based price forecasts are useful as ranges, not targets.
 
 **Tools:** Python (pandas, statsmodels) · Tableau
