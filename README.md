@@ -21,8 +21,6 @@
 
 **Tools:** Python (pandas, statsmodels) · Tableau
 
-**Tools:** Python (pandas, statsmodels) · Tableau
-
 📊 **[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/duy.nguyen8153/viz/Predictive-ASXStockPricesAnalysis/ASXPriceStory)**
 
 ---
